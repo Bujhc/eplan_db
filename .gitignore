@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 *.mdb
+*.xml
 .Python
 build/
 develop-eggs/
