@@ -28,7 +28,7 @@ def update_db(list_with_price):
         conn.commit
         
 
-workbook = load_workbook(filename=r"C:\Project\eplan\CSPEC_Oleg.xlsx", read_only=True)
+workbook = load_workbook(filename=r"C:\Users\Bujhc\eplan_db\CSPEC_Oleg.xlsx", read_only=True)
 sheet = workbook.active
 price= []
 
@@ -37,8 +37,8 @@ for table_line in sheet.iter_rows(min_row=1, min_col=1, max_col=5, values_only=T
     price.append(convert_line)
 try:    
     
-    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=D:\Temp\db\parts.mdb;')
-    conn.autocommit = True
+    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\Bujhc\eplan_db;')
+    conn.autocommit = True                      # very important flag for db - allow to write in access 
     cursor = conn.cursor()
 
 
