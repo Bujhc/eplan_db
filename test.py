@@ -13,7 +13,7 @@ pyodbc.pooling = False
  #   if row[0] == "MS-NCE2516-0":
  #       print(row[4])
     
-conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)}; DBQ=D:\Temp\db\parts.mdb;')
+conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)}; DBQ=C:\Users\Bujhc\eplan_db\parts.mdb;')
 cursor = conn.cursor()
 
 t1 = [['A99DY-200C','111111'],['MS-NAE3510-2', '222222']]

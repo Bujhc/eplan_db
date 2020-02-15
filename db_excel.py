@@ -37,7 +37,7 @@ for table_line in sheet.iter_rows(min_row=1, min_col=1, max_col=5, values_only=T
     price.append(convert_line)
 try:    
     
-    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\Bujhc\eplan_db;')
+    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\Bujhc\eplan_db\parts.mdb;')
     conn.autocommit = True                      # very important flag for db - allow to write in access 
     cursor = conn.cursor()
 
